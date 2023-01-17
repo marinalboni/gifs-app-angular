@@ -1,6 +1,6 @@
 <h3 class="text-light">APP</h3>
 <hr class="text-light">
 
-<div class="list-group list-reset">
-    <a href="#" class="list-group-item list-group-item-action">Dashboard</a>
+<div class="list-group list-reset" *ngFor="let query of queriesList">
+    <a href="#" class="list-group-item list-group-item-action my-1"> {{ query | titlecase}} </a>
 </div>
