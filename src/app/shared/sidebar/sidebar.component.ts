@@ -13,4 +13,8 @@ export class SidebarComponent {
 
   constructor( private gifsService: GifsService ) {}
 
+  onClick( query: string ) {
+    this.gifsService.buscarGifs(query)
+  }
+
 }

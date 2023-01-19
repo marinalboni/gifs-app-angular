@@ -2,5 +2,9 @@
 <hr class="text-light">
 
 <div class="list-group list-reset" *ngFor="let query of queriesList">
-    <a href="#" class="list-group-item list-group-item-action my-1"> {{ query | titlecase}} </a>
+    <a 
+        href="#" 
+        class="list-group-item list-group-item-action my-1"
+        (click)="onClick( query )"
+    > {{ query | titlecase }} </a>
 </div>
